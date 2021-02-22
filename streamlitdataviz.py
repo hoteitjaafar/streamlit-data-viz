@@ -10,7 +10,7 @@ new_data = 'globalsalesdata.csv'
 
 @st.cache 
 def load_data():
-    data = pd.read_csv(new_data)
+    data = pd.read_csv(new_data, encoding='latin1')
     return data
 
 df = load_data()
